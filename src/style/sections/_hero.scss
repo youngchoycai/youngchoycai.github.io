@@ -1,0 +1,121 @@
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+  // If you want to set a background image on the hero section, uncomment these with yout custom image
+
+  /*background: url("img1.jpg");
+  background-position: center;
+  background-size: cover; */
+
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    & a {
+      font-size: 2.4rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+  
+}
+.text-slide0, .text-slide1, .text-slide2, .text-slide3 
+{
+  position: absolute; 
+
+}
+.text-slide0
+{
+  animation: text-fade0 7s infinite;
+}
+.text-slide1
+{
+  
+  animation: text-fade1 7s infinite;
+}
+.text-slide2
+{
+  
+  animation: text-fade2 7s infinite;
+}
+.text-slide3
+{
+  animation: text-fade3 7s infinite;
+}
+@keyframes text-fade0
+{
+  0% {opacity: 1;}
+  25% {opacity: 0;}
+  50% {opacity: 0;}
+  75% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes text-fade1 
+{
+  0% {opacity: 0;}
+  25% {opacity: 1;}
+  50% {opacity: 0;}
+  75% {opacity: 0;}
+  100% {opacity: 0;}
+}
+@keyframes text-fade2 
+{
+  0% {opacity: 0;}
+  25% {opacity: 0;}
+  50% {opacity: 1;}
+  75% {opacity: 0;}
+  100% {opacity: 0;}
+}
+@keyframes text-fade3 
+{
+  0% {opacity: 0;}
+  25% {opacity: 0;}
+  50% {opacity: 0;}
+  75% {opacity: 1;}
+  100% {opacity: 0;}
+}
