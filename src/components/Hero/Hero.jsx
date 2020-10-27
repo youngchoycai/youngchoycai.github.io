@@ -26,38 +26,28 @@ const Header = () => {
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
-            {title} <span className="text-color-main">{name}</span>
-            .
+            {title}{' '}
+            <span className="text-color-main">{name}.</span>
             <br />
-            {subtitle}
-            <span>
-              <div className="text-slider">
-                <div className="text-slide0">
-                  {' '}
-                  <span className="text-color-main" />
-                </div>
-                <div className="text-slide1">
-                  {' '}
-                  <span className="text-color-main">software engineer</span>.
-                </div>
-                <div className="text-slide2">
-                  {' '}
-                  <span className="text-color-main">magician</span>.
-                </div>
-                <div className="text-slide3">
-                  {' '}
-                  <span className="text-color-main">volleyball lover</span>.
-                </div>
-              </div>
-            </span>
-            <br />
+            {subtitle} 
+            <br />  
+            <div className="text-fader">
+              <span className="text-color-main text-slide0"></span>
+              <span className="text-color-main text-slide1">software engineer.</span>
+              <span className="text-color-main text-slide2">magician.</span>
+              <span className="text-color-main text-slide3">volleyball lover.</span>
+                
+            </div>
+           
+            <br/>
           </h1>
+          
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
-                {cta}
+                {cta} 
               </Link>
             </span>
           </p>

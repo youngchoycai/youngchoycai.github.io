@@ -20,21 +20,26 @@
 
   .about-wrapper {
     @include respond(phone) {
-      padding-bottom: 5rem;
+      height: 95vh;
+      width: 94.5vw;
     }
 
     &__image {
       display: flex;
       height: 100%;
+      width: 100%;
       align-items: center;
       justify-content: center;
-      padding-top: 8rem;
+      padding-top: 6rem;
+      left: 0; 
+      right: 0;
       @include respond(tab-port) {
         padding-bottom: 6.4rem;
       }
       @include respond(tab-land) {
         height: 100%;
       }
+      
     }
 
     &__info {
@@ -42,9 +47,11 @@
       height: 100%;
       justify-content: center;
       flex-direction: column;
-
+    
       @include respond(phone) {
         align-items: center;
+        position: absolute;
+        bottom: 0;
       }
 
       &-text {
@@ -78,58 +85,46 @@
       }
     }
   }
+  
 }
-.slideshow {
-  position: absolute;
-  overflow: hidden;
-}
-.photo-slide0, .photo-slide1, .photo-slide2, .photo-slide3 
-{
+
+.photo-slide0, .photo-slide1, .photo-slide2, .photo-slide3 {
  position: absolute;
 }
-.photo-slide0
-{
+.photo-slide0{
   animation: photo-fade0 12s infinite;
 }
-.photo-slide1
-{
-  
+.photo-slide1{
   animation: photo-fade1 12s infinite;
 }
-.photo-slide2
-{
+.photo-slide2{
   animation: photo-fade2 12s infinite;
 }
-.photo-slide3
-{
+.photo-slide3{
   animation: photo-fade3 12s infinite;
 }
-@keyframes photo-fade0
-{
+@keyframes photo-fade0{
   0% {opacity: 1;}
   25% {opacity: 0;}
   50% {opacity: 0;}
   75% {opacity: 0;}
   100% {opacity: 1;}
 }
-@keyframes photo-fade1 
-{
+@keyframes photo-fade1 {
   0% {opacity: 0;}
   25% {opacity: 1;}
   50% {opacity: 0;}
   75% {opacity: 0;}
   100% {opacity: 0;}
 }
-@keyframes photo-fade2 
-{
+@keyframes photo-fade2 {
   0% {opacity: 0;}
   25% {opacity: 0;}
   50% {opacity: 1;}
   75% {opacity: 0;}
   100% {opacity: 0;}
 }
-@keyframes photo-fade3 
-{
+@keyframes photo-fade3 {
   0% {opacity: 0;}
   25% {opacity: 0;}
   50% {opacity: 0;}

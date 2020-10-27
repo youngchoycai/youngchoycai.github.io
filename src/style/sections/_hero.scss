@@ -14,16 +14,13 @@
   bottom: 0;
   right: 0;
   z-index: -1;
-
   // If you want to set a background image on the hero section, uncomment these with yout custom image
 
   /*background: url("img1.jpg");
   background-position: center;
   background-size: cover; */
-
-  @include respond(phone) {
-    padding: 0rem $default-font-size;
-  }
+  
+  
 
   .hero-title {
     font-size: 5.6rem;
@@ -39,11 +36,11 @@
       text-align: center;
     }
     @include respond(phone) {
-      font-size: 3.5rem;
+      font-size: 3rem;
       line-height: 1.5;
     }
     @include respond(phone-xs) {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
     }
   }
 
@@ -63,59 +60,65 @@
     }
   }
   
+   @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
 }
-.text-slide0, .text-slide1, .text-slide2, .text-slide3 
-{
-  position: absolute; 
-
+.text-slide0, .text-slide1, .text-slide2, .text-slide3 {
+  position: absolute;
+  width: 100%;
+  
+  @include respond(phone) {
+    font-size: 3rem;
+    line-height: 1.5;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+  }
+  @include respond(phone-xs) {
+    font-size: 2.5rem;
+  }
 }
-.text-slide0
-{
+.text-slide0 {
   animation: text-fade0 7s infinite;
 }
-.text-slide1
-{
-  
+.text-slide1{ 
   animation: text-fade1 7s infinite;
 }
-.text-slide2
-{
-  
+.text-slide2{
   animation: text-fade2 7s infinite;
 }
-.text-slide3
-{
+.text-slide3{
   animation: text-fade3 7s infinite;
 }
-@keyframes text-fade0
-{
+@keyframes text-fade0{
   0% {opacity: 1;}
   25% {opacity: 0;}
   50% {opacity: 0;}
   75% {opacity: 0;}
   100% {opacity: 1;}
 }
-@keyframes text-fade1 
-{
+@keyframes text-fade1 {
   0% {opacity: 0;}
   25% {opacity: 1;}
   50% {opacity: 0;}
   75% {opacity: 0;}
   100% {opacity: 0;}
 }
-@keyframes text-fade2 
-{
+@keyframes text-fade2 {
   0% {opacity: 0;}
   25% {opacity: 0;}
   50% {opacity: 1;}
   75% {opacity: 0;}
   100% {opacity: 0;}
 }
-@keyframes text-fade3 
-{
+@keyframes text-fade3 {
   0% {opacity: 0;}
   25% {opacity: 0;}
   50% {opacity: 0;}
   75% {opacity: 1;}
   100% {opacity: 0;}
 }
+

@@ -34,7 +34,7 @@ export const projectsData = [
     img: 'tunein.jpg',
     title: 'Tune-in',
     info:
-      "A full-stack React+Flask web application utilizing Spotify API that allows users to create groups with their friends and generate playlists that contain new songs based on the group members' shared taste in music.",
+      "Tune-in is a full-stack React+Flask web application utilizing Spotify API that allows users to create groups with their friends and generate playlists that contain new songs based on the group members' shared taste in music.",
     info2: '',
     url: 'https://tunein.dev/',
     repo1: 'https://github.com/youngchoycai/tune-in-frontend', // if no repo, the button will not show up
@@ -47,7 +47,7 @@ export const projectsData = [
     img: 'slowify.jpg',
     title: 'Slowify Music',
     info:
-      'An audio playback Android app written in Java that gives users complete control of the tempo and looping of any song they decide to upload. Made with dancers, singers, and musicians in mind.',
+      'With dancers, singers, and musicians in mind, Slowify Music is an audio playback Android app written in Java that gives users complete control of tempo adjustment and looping for a practical and efficient experience during practice.',
     info2: "Also, cross-compatible with AFX Dance's web application, slow.afx.dance.",
     url: 'https://play.google.com/store/apps/details?id=dance.afx.music',
     repo1: 'https://github.com/youngchoycai/music-android', // if no repo, the button will not show up
@@ -58,9 +58,9 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'roster.jpg',
-    title: "AFX Dance's Roster Application",
+    title: "AFX Roster",
     info:
-      "A Ruby on Rails roster management system created for the board members of AFX Dance to manage incoming dancers' info for the semester. It performs form collecting and team randomization, as well.",
+    "The AFX Roster is a Ruby on Rails roster management system created for UC Berkeley\'s largest dance team. It is used to organize member information, collect audition form data, and randomize team groupings.",
     info2: '',
     url: '',
     repo1: 'https://github.com/youngchoycai/roster', // if no repo, the button will not show up
