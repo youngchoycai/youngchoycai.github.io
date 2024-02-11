@@ -36,7 +36,7 @@ export const projectsData = [
     info:
       "Tune-in is a full-stack React+Flask web application utilizing Spotify API that allows users to create groups with their friends and generate playlists that contain new songs based on the group members' shared taste in music.",
     info2: '',
-    url: 'https://tunein.dev/',
+    url: '',
     repo1: 'https://github.com/youngchoycai/tune-in-frontend', // if no repo, the button will not show up
     repotext1: 'Front End',
     repo2: 'https://github.com/youngchoycai/tune-in-backend',
